@@ -1,0 +1,150 @@
+.portfolio-page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1200px;
+    min-height: calc(100vh - 48px);
+    margin: 0 auto;
+}
+
+.portfolio-page > .header {
+    max-width: none;
+    margin: 0;
+}
+
+.portfolio-layout {
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+}
+
+.section-title {
+    margin: 8px 0;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid var(--greige);
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(40, 40, 38, 0.1);
+}
+
+.project-number {
+    padding: 6px 10px;
+    background-color: var(--linen);
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.project-card h3 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.project-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.project-button {
+    margin-top: auto;
+    padding: 12px 20px;
+    background-color: var(--charcoal);
+    color: var(--linen);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.project-button:hover {
+    background-color: var(--greige);
+    color: var(--charcoal);
+}
+
+.project-button:focus-visible {
+    outline: 2px solid var(--charcoal);
+    outline-offset: 4px;
+}
+
+.profile {
+    min-width: 0;
+    padding: 28px;
+    background-color: #ecd2d0;
+    border-radius: 12px;
+}
+
+.profile-label {
+    margin: 0 0 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.profile h2 {
+    margin: 0 0 18px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.profile h3 {
+    margin: 28px 0 12px;
+    font-family: Georgia, serif;
+    font-size: 21px;
+}
+
+.profile p,
+.profile li {
+    line-height: 1.8;
+}
+
+.profile ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.group {
+    margin: 28px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--charcoal);
+    font-size: 14px;
+}
+
+.portfolio-footer {
+    padding: 20px;
+    background-color: var(--charcoal);
+    color: var(--linen);
+    text-align: center;
+    border-radius: 12px;
+}
+
+.portfolio-footer p {
+    margin: 0;
+    font-size: 14px;
+}

@@ -1,0 +1,81 @@
+.page-title {
+    letter-spacing: -1px;
+    color: aliceblue;
+}
+
+.cards {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto 48px;
+}
+
+.card {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--greige);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(40, 40, 38, 0.04);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(40, 40, 38, 0.12);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 7px;
+    background-color: var(--greige);
+}
+
+.card h2 {
+    margin: 24px 0 12px;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.card p {
+    margin: 0 0 28px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.card button {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 12px 22px;
+    background-color: var(--charcoal);
+    color: var(--linen);
+    border: 1px solid var(--charcoal);
+    border-radius: 6px;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.card button:hover {
+    background-color: var(--greige);
+    color: var(--charcoal);
+}
+
+.card button:focus-visible {
+    outline: 2px solid var(--taupe);
+    outline-offset: 4px;
+}
+
+body {
+    background-image: url("images/task3.png");
+}
