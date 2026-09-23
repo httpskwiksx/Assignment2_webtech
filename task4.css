@@ -148,3 +148,8 @@
     margin: 0;
     font-size: 14px;
 }
+@media (max-width: 700px) {
+    .portfolio-layout {
+        grid-template-columns: 1fr;
+    }
+}

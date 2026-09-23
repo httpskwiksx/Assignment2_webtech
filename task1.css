@@ -79,3 +79,8 @@
 body {
     background-image: url("images/task3.png");
 }
+@media (max-width: 700px) {
+    .cards {
+        flex-direction: column;
+    }
+}
